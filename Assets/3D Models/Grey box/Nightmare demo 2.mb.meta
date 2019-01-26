@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: deadeb2dbb546204db21a02d87ebda38
+guid: be063843dca543d498f1106c94284f92
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -273,7 +273,6 @@ ModelImporter:
     4300096: pCube44
     4300098: pCube45
     4300100: pCylinder3
-    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 1
