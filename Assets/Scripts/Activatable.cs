@@ -24,7 +24,8 @@ public class Activatable : MonoBehaviour
             {
                 kv.Value(EventType.Activated);
             }
-            sequencer.Activated(this);
+            sequencer.OnActivated(this);
+
         }
     }
 

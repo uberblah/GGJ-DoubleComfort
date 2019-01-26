@@ -2,19 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UnhideAppear : MonoBehaviour
+public class AppearOnReady : MonoBehaviour
 {
-    private System.Guid id;
+    private System.Guid id = System.Guid.NewGuid();
     private new Renderer renderer;
     public FadeInOut fader = null;
     
-    public SneakyItem item;
+    public Activatable activatable;
 
     // Start is called before the first frame update
     void Start()
     {
-        id = System.Guid.NewGuid();
-        item.Register(id.ToString(), BeginFade);
+        activatable.Register(id.ToString(), BeginFade);
         if(fader == null)
         {
             fader = GetComponent<FadeInOut>();
@@ -26,8 +25,11 @@ public class UnhideAppear : MonoBehaviour
         }
     }
 
-    public void BeginFade()
+    public void BeginFade(Activatable.EventType evt)
     {
-        fader.FadeIn();
+        if(evt == Activatable.EventType.Ready)
+        {
+            fader.FadeIn();
+        }
     }
 }
