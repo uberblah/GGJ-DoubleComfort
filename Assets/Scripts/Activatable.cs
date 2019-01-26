@@ -4,17 +4,46 @@ using UnityEngine;
 
 public class Activatable : MonoBehaviour
 {
-    public Sequencer sequencer = null;
-
-    // Start is called before the first frame update
-    void Start()
+    public enum EventType
     {
-        
+        Activated,
+        Ready
+    }
+    public delegate void OnReadyDelegate(EventType et);
+
+    private Dictionary<string, OnReadyDelegate> listeners = new Dictionary<string, OnReadyDelegate>();
+
+    public Sequencer sequencer = null;
+    private bool ready = false;
+
+    public void TryActivate()
+    {
+        if(ready)
+        {
+            foreach(var kv in listeners)
+            {
+                kv.Value(EventType.Activated);
+            }
+            sequencer.Activated(this);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnReady()
     {
-        
+        ready = true;
+        foreach(var kv in listeners)
+        {
+            kv.Value(EventType.Ready);
+        }
+    }
+
+    public void Register(string name, OnReadyDelegate cb)
+    {
+        listeners.Add(name, cb);
+    }
+
+    public void Deregister(string name)
+    {
+        listeners.Remove(name);
     }
 }
