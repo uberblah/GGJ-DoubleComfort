@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Activatable : MonoBehaviour
 {
+    [System.Serializable]
     public enum EventType
     {
         Activated,
