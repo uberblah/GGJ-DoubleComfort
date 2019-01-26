@@ -4,38 +4,40 @@ using UnityEngine;
 
 public class Sequencer : MonoBehaviour
 {
-    public Activatable[] sequence;
+    public Activatable[] sequenceArray;
+    int currentIndex = 0;
+
     /*
-     * object_0
-     * object_1
-     * object_2_0, object_2_1
-     * 
-     * check the tag up until the second underscore, then check after that and interpret it if there is anything
+     * make an array of objects
+     * each object will be responsible for the one that comes before it
      * */
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if(sequenceArray[0] != null)
+        {
+            sequenceArray[0].OnReady();
+        }
     }
 
     void AdvanceSequence()  //this changes the current state of the sequence to the next state, in order
     {
-        if(false)//the current state is the last one, do not execute this function
+        if(currentIndex < sequenceArray.Length)
         {
-
+            sequenceArray[currentIndex].OnReady();
+        }
+        else
+        {
+            //possibly start triggering win-game events
         }
     }
 
     public void OnActivated(Activatable newActivatable)
     {
-        
+        //close out the previous
+        currentIndex++;
+        AdvanceSequence();
     }
 }
