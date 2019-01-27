@@ -16,16 +16,8 @@ public class OnTouch : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter(Collision collision)
+    public void Touch()
     {
-        Debug.Log("I'm COLLIDING");
-        foreach(var point in collision.contacts)
-        {
-            if (point.otherCollider.gameObject.GetComponent<Player>() != null)
-            {
-                Debug.Log("I'm COLLIDING with a PLAYER");
-                activatable.TryActivate();
-            }
-        }
+        activatable.TryActivate();
     }
 }

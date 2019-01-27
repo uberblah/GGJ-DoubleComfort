@@ -34,17 +34,3 @@ public class Action_Dialogue : Action
 
     }
 }
->>>>>>> merge commit
-=======
-    }
-
-    //overide Do function of Action button to do custome action
-    public void Do()
-    {
-        Debug.Log("You should override Action.Do in your subclass!");
-
-        //
-        trigger.TriggerDialogue();
-
-    }
-}
