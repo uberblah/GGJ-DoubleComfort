@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d5fcf7de1005c42aaaef1b4b672c70a9
+guid: 1d86692fad40b4e31848cd5df64a3bb5
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -15,17 +15,16 @@ ModelImporter:
     100018: foot_bone_right
     100020: foot_bone_right_end
     100022: Player
-    100024: Player.001
-    100026: //RootNode
-    100028: Point
-    100030: pole_bone_left
-    100032: pole_bone_left_end
-    100034: pole_bone_right
-    100036: pole_bone_right_end
-    100038: target_bone_left
-    100040: target_bone_left_end
-    100042: target_bone_right
-    100044: target_bone_right_end
+    100024: //RootNode
+    100026: Point
+    100028: pole_bone_left
+    100030: pole_bone_left_end
+    100032: pole_bone_right
+    100034: pole_bone_right_end
+    100036: target_bone_left
+    100038: target_bone_left_end
+    100040: target_bone_right
+    100042: target_bone_right_end
     400000: Armature
     400002: Bone
     400004: Bone.001
@@ -38,28 +37,30 @@ ModelImporter:
     400018: foot_bone_right
     400020: foot_bone_right_end
     400022: Player
-    400024: Player.001
-    400026: //RootNode
-    400028: Point
-    400030: pole_bone_left
-    400032: pole_bone_left_end
-    400034: pole_bone_right
-    400036: pole_bone_right_end
-    400038: target_bone_left
-    400040: target_bone_left_end
-    400042: target_bone_right
-    400044: target_bone_right_end
+    400024: //RootNode
+    400026: Point
+    400028: pole_bone_left
+    400030: pole_bone_left_end
+    400032: pole_bone_right
+    400034: pole_bone_right_end
+    400036: target_bone_left
+    400038: target_bone_left_end
+    400040: target_bone_right
+    400042: target_bone_right_end
     2100000: Material.002
-    4300000: Player.001
-    4300002: Player
+    4300000: Player
     7400000: Armature|ArmatureAction
     7400002: Armature|Player.001Action.002
     9500000: //RootNode
     10800000: Point
     13700000: Player
-    13700002: Player.001
     2186277476908879412: ImportLogs
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.002
+    second: {fileID: 2100000, guid: 9e9a44520a05a452ea31e4efc103b3bb, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
