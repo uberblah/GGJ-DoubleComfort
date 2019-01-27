@@ -43,7 +43,7 @@ public class FadeInOut : MonoBehaviour
 
         float startTime = Time.time;
         float endTime = startTime + curve.keys[curve.length - 1].time;
-        for (float now = Time.time; now <= endTime; now = Time.time)
+        for (float now = Time.time; now <= endTime + 0.1f; now = Time.time)
         {
             float curveValue = curve.Evaluate(now - startTime);
             foreach (var renderer in renderers)

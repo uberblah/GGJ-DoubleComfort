@@ -4,20 +4,17 @@ using UnityEngine;
 
 public class Disappear : Action
 {
-    public FadeInOut fader = null;
-
+    // Start is called before the first frame update
     void Start()
     {
         InitAction();
-        if(fader == null)
-        {
-            Debug.LogError("You must specify a fader to use");
-            return;
-        }
     }
-    
+
     public override void Do()
     {
-        fader.FadeOut();
+        foreach(var renderer in GetComponentsInChildren<Renderer>())
+        {
+            renderer.enabled = false;
+        }
     }
 }
