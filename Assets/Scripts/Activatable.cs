@@ -17,17 +17,19 @@ public class Activatable : MonoBehaviour
 
     public Sequencer sequencer = null;
     private bool ready = false;
+    private bool done = false;
     private readonly System.Guid id = System.Guid.NewGuid();
 
     public void TryActivate()
     {
-        if(ready)
+        if(ready && !done)
         {
             foreach(var kv in listeners)
             {
                 kv.Value(EventType.Activated);
             }
             sequencer.OnActivated(this);
+            done = true;
         }
     }
 

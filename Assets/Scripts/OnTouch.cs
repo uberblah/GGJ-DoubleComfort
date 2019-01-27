@@ -5,9 +5,10 @@ using UnityEngine;
 public class OnTouch : MonoBehaviour
 {
     public Activatable activatable;
-    public string tag;
+    public readonly string matchedTag;
+    public readonly GameObject targetObject;
 
-    private void Start()
+    void Start()
     {
         if(activatable == null)
         {
@@ -15,11 +16,16 @@ public class OnTouch : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.CompareTag(tag))
+        Debug.Log("I'm COLLIDING");
+        foreach(var point in collision.contacts)
         {
-            activatable.TryActivate();
+            if (point.otherCollider.gameObject.GetComponent<Player>() != null)
+            {
+                Debug.Log("I'm COLLIDING with a PLAYER");
+                activatable.TryActivate();
+            }
         }
     }
 }
