@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: 96a6b8832ac16466297aee9455435b62
+guid: 09734798653fa4ed48f524ca3ada6171
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: Camera
     100002: glass
-    100004: //RootNode
-    100006: milk
+    100004: milk
+    100006: //RootNode
     400000: Camera
     400002: glass
-    400004: //RootNode
-    400006: milk
+    400004: milk
+    400006: //RootNode
     2000000: Camera
     2100000: milk_Mat
     2100002: glass_Mat

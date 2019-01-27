@@ -1,74 +1,84 @@
 fileFormatVersion: 2
-guid: 5e652e4b2d72b494c9f333e76b274b29
+guid: 2f0a892de0a1a4b81a528d1f71cfb8fc
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: arm_left
     100002: arm_right
     100004: body
-    100006: ear_left
-    100008: ear_right
-    100010: eye
-    100012: eye.001
-    100014: head
-    100016: Lamp
-    100018: leg_left
-    100020: leg_right
-    100022: mouth
-    100024: nose
-    100026: //RootNode
+    100006: Cylinder
+    100008: Cylinder.001
+    100010: ear_left
+    100012: ear_left.001
+    100014: eye
+    100016: eye.001
+    100018: head
+    100020: Lamp
+    100022: leg_left
+    100024: leg_right
+    100026: mouth
+    100028: nose
+    100030: //RootNode
     400000: arm_left
     400002: arm_right
     400004: body
-    400006: ear_left
-    400008: ear_right
-    400010: eye
-    400012: eye.001
-    400014: head
-    400016: Lamp
-    400018: leg_left
-    400020: leg_right
-    400022: mouth
-    400024: nose
-    400026: //RootNode
+    400006: Cylinder
+    400008: Cylinder.001
+    400010: ear_left
+    400012: ear_left.001
+    400014: eye
+    400016: eye.001
+    400018: head
+    400020: Lamp
+    400022: leg_left
+    400024: leg_right
+    400026: mouth
+    400028: nose
+    400030: //RootNode
     2100000: stuffed_bear_Mat
     2100002: eye_nose_Mat
     2300000: arm_left
     2300002: arm_right
     2300004: body
-    2300006: ear_left
-    2300008: ear_right
-    2300010: eye
-    2300012: eye.001
-    2300014: head
-    2300016: leg_left
-    2300018: leg_right
-    2300020: mouth
-    2300022: nose
+    2300006: Cylinder
+    2300008: Cylinder.001
+    2300010: ear_left
+    2300012: ear_left.001
+    2300014: eye
+    2300016: eye.001
+    2300018: head
+    2300020: leg_left
+    2300022: leg_right
+    2300024: mouth
+    2300026: nose
     3300000: arm_left
     3300002: arm_right
     3300004: body
-    3300006: ear_left
-    3300008: ear_right
-    3300010: eye
-    3300012: eye.001
-    3300014: head
-    3300016: leg_left
-    3300018: leg_right
-    3300020: mouth
-    3300022: nose
-    4300000: arm_right
-    4300002: arm_left
-    4300004: leg_right
-    4300006: leg_left
-    4300008: body
-    4300010: eye
-    4300012: eye.001
-    4300014: ear_left
-    4300016: nose
-    4300018: mouth
-    4300020: ear_right
-    4300022: head
+    3300006: Cylinder
+    3300008: Cylinder.001
+    3300010: ear_left
+    3300012: ear_left.001
+    3300014: eye
+    3300016: eye.001
+    3300018: head
+    3300020: leg_left
+    3300022: leg_right
+    3300024: mouth
+    3300026: nose
+    4300000: Cylinder.001
+    4300002: Cylinder
+    4300004: ear_left.001
+    4300006: arm_right
+    4300008: arm_left
+    4300010: leg_right
+    4300012: leg_left
+    4300014: body
+    4300016: eye
+    4300018: eye.001
+    4300020: ear_left
+    4300022: nose
+    4300024: mouth
+    4300026: head
     10800000: Lamp
   externalObjects: {}
   materials:
