@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FadeInOut : MonoBehaviour
 {
-    private new Renderer[] renderers = null;
+    private Renderer[] renderers = null;
 
     public AnimationCurve fadeInCurve = AnimationCurve.EaseInOut(0.0f, 0.0f, 1.0f, 1.0f);
     public AnimationCurve fadeOutCurve = AnimationCurve.EaseInOut(0.0f, 1.0f, 1.0f, 0.0f);
@@ -14,12 +14,6 @@ public class FadeInOut : MonoBehaviour
     void Start()
     {
         renderers = GetComponentsInChildren<Renderer>();
-        if(renderers == null)
-        {
-            Debug.LogError("Couldn't find a Renderer component attached to this gameObject");
-            Debug.LogError(this);
-            return;
-        }
         if(!startVisible)
         {
             foreach(var rend in renderers)
@@ -45,25 +39,28 @@ public class FadeInOut : MonoBehaviour
         foreach (var renderer in renderers)
         {
             renderer.enabled = true;
-
         }
 
         float startTime = Time.time;
         float endTime = startTime + curve.keys[curve.length - 1].time;
         for (float now = Time.time; now <= endTime; now = Time.time)
         {
+            float curveValue = curve.Evaluate(now - startTime);
             foreach (var renderer in renderers)
             {
                 Color color = renderer.material.color;
-                color.a = curve.Evaluate(now - startTime);
+                color.a = curveValue;
                 renderer.material.color = color;
             }
             yield return null;
         }
-        foreach (var renderer in renderers) { 
-        if (renderer.material.color.a <= 0.0f) {
-            renderer.enabled = false;
+
+        foreach (var renderer in renderers)
+        { 
+            if (renderer.material.color.a <= 0.0f)
+            {
+                renderer.enabled = false;
+            }
         }
-    }
     }
 }
