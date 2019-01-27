@@ -1,38 +1,31 @@
 fileFormatVersion: 2
-guid: 2098672a4a1e1443b98dec7db0677353
+guid: d69e791ecabb04fa9ba1790bc3103304
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Circle
-    100002: Mesh
-    100004: Mesh.002
-    100006: //RootNode
-    100008: Plane.001
-    100010: Sphere
-    400000: Circle
-    400002: Mesh
-    400004: Mesh.002
-    400006: //RootNode
-    400008: Plane.001
-    400010: Sphere
-    2100000: liquid_Mat
-    2100002: noodles_Mat
-    2100004: bowl_Mat
-    2300000: Circle
-    2300002: Mesh
-    2300004: Mesh.002
-    2300006: Plane.001
-    2300008: Sphere
-    3300000: Circle
-    3300002: Mesh
-    3300004: Mesh.002
-    3300006: Plane.001
-    3300008: Sphere
-    4300000: Circle
-    4300002: Mesh.002
-    4300004: Mesh
-    4300006: Sphere
-    4300008: Plane.001
+    100000: Mesh.002
+    100002: //RootNode
+    100004: Plane.001
+    100006: Point
+    100008: Sphere
+    400000: Mesh.002
+    400002: //RootNode
+    400004: Plane.001
+    400006: Point
+    400008: Sphere
+    2100000: noodles_Mat
+    2100002: bowl_Mat
+    2100004: liquid_Mat
+    2300000: Mesh.002
+    2300002: Plane.001
+    2300004: Sphere
+    3300000: Mesh.002
+    3300002: Plane.001
+    3300004: Sphere
+    4300000: Mesh.002
+    4300002: Sphere
+    4300004: Plane.001
+    10800000: Point
     2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
