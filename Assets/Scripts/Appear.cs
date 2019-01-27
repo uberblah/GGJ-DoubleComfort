@@ -4,17 +4,15 @@ using UnityEngine;
 
 public class Appear : Action
 {
-    private new readonly Renderer renderer;
     public FadeInOut fader = null;
 
     // Start is called before the first frame update
     void Start()
     {
         InitAction();
-        if (fader == null)
+        if(fader == null)
         {
-            Debug.LogError("You must specify a fader to use");
-            return;
+            Debug.LogError("No fader found for this Appear action");
         }
     }
 

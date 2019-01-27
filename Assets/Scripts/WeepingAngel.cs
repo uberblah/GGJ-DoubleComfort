@@ -24,7 +24,7 @@ public class WeepingAngel : MonoBehaviour
     public void Update()
     {
         float dist = (observer.gameObject.transform.position - gameObject.transform.position).magnitude;
-        if(prevDistance <= observer.distance && dist > observer.distance)
+        if(dist > observer.distance)
         {
             activatable.TryActivate();
         }

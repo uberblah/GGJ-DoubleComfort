@@ -4,19 +4,17 @@ using UnityEngine;
 
 public class Disappear : Action
 {
+    // Start is called before the first frame update
     void Start()
     {
         InitAction();
     }
-    
+
     public override void Do()
     {
-        Renderer renderer = gameObject.GetComponent<Renderer>();
-        if(renderer == null)
+        foreach(var renderer in GetComponentsInChildren<Renderer>())
         {
-            Debug.LogError("Couldn't find a renderer for this Disappear component");
-            return;
+            renderer.enabled = false;
         }
-        renderer.enabled = false;
     }
 }

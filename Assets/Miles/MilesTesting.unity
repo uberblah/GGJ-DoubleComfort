@@ -342,6 +342,7 @@ GameObject:
   - component: {fileID: 113275282}
   - component: {fileID: 113275284}
   - component: {fileID: 113275285}
+  - component: {fileID: 113275286}
   m_Layer: 0
   m_Name: DisappearingCube
   m_TagString: Untagged
@@ -380,6 +381,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100094, guid: 3bcc3013c9e2d485b847e1561d00d641, type: 3}
+  - {fileID: 2100000, guid: ce8a669f47d0e4c40b8fc74a1b1ab553, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -454,7 +456,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 113275277}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 770723e8e3121aa499d0110c29e609d4, type: 3}
   m_Name: 
@@ -477,6 +479,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &113275286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113275277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e259a92124e0c5149ba07f2f51fac0bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activatable: {fileID: 113275283}
+  eventType: 0
+  mats1:
+  - {fileID: 2100094, guid: 3bcc3013c9e2d485b847e1561d00d641, type: 3}
+  mats2:
+  - {fileID: 2100000, guid: ce8a669f47d0e4c40b8fc74a1b1ab553, type: 2}
 --- !u!1 &291552945
 GameObject:
   m_ObjectHideFlags: 0
