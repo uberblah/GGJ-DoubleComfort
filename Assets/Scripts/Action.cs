@@ -9,7 +9,7 @@ public class Action : MonoBehaviour
     public Activatable.EventType eventType;
 
     // Start is called before the first frame update
-    void Start()
+    protected void InitAction()
     {
         if (activatable == null)
         {

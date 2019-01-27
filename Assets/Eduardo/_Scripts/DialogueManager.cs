@@ -22,6 +22,13 @@ public class DialogueManager : MonoBehaviour
     //create reference to start button animation
     //public Animator startAnimator;
 
+    //create reference for typing audio
+    public AudioSource audio;
+
+    //grab special audio source attached to object of Dialogue Trigger
+    private AudioSource audioClip;
+
+
     // Use this for initialization
     void Start()
     {
@@ -29,10 +36,11 @@ public class DialogueManager : MonoBehaviour
         //Initialize queue of sentences
         sentences = new Queue<string>();
 
+        
     }
 
     // function to initiate the start of a dialogue
-    public void StartDialogue(Dialogue dialogue)
+    public void StartDialogue(Dialogue dialogue, AudioSource clip)
     {
 
         // debug print
@@ -42,6 +50,11 @@ public class DialogueManager : MonoBehaviour
 
         // hide start button
         //startAnimator.SetBool("IsOpen", false);
+
+
+        audioClip = clip;
+        //audio sigh
+        audioClip.Play();
 
         //set animation bool to open to show dialogue box
         animator.SetBool("IsOpen", true);
@@ -101,12 +114,16 @@ public class DialogueManager : MonoBehaviour
         //start with blank dialogue box
         dialogueText.text = "";
 
+        //start typing audio
+        audio.Play();
+
         //split sentence into idividual chars in arrays and print one by one
         foreach (char letter in sentence.ToCharArray())
         {
             dialogueText.text += letter;
             yield return null;
         }
+        audio.Stop();
     }
 
 
@@ -121,6 +138,9 @@ public class DialogueManager : MonoBehaviour
 
         //show start button again
         //startAnimator.SetBool("IsOpen", true);
+
+        //end audio clip
+        audioClip.Stop();
 
         //set title of Dialogue
         nameText.text = "";

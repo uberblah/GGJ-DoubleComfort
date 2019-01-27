@@ -45,7 +45,6 @@ public class FadeInOut : MonoBehaviour
         {
             Color color = renderer.material.color;
             color.a = curve.Evaluate(now - startTime);
-            Debug.Log(color.a);
             renderer.material.color = color;
             yield return null;
         }

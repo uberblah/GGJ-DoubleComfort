@@ -55,68 +55,6 @@ ModelImporter:
     100098: pPlane1
     100100: pPlane2
     100102: pPlane3
-    100104: bathroomSink
-    100106: bedBunk
-    100108: bedDouble
-    100110: bookcaseClosedDoors
-    100112: books
-    100114: bunk_bed_Grp
-    100116: cabinetBedDrawerTable
-    100118: cabinetTelevision
-    100120: cabinetTelevisionDoors
-    100122: chair
-    100124: chair1
-    100126: chair2
-    100128: chairModernCushion
-    100130: chairModernCushion1
-    100132: cover
-    100134: coverBottom
-    100136: coverTop
-    100138: desk
-    100140: door
-    100142: door_Grp
-    100144: doorFridge
-    100146: doorLeft
-    100148: doorRight
-    100150: doorwayFront
-    100152: drawer
-    100154: dryer
-    100156: dryerDoor
-    100158: Group
-    100160: group10
-    100162: group11
-    100164: group12
-    100166: group13
-    100168: group14
-    100170: group15
-    100172: group16
-    100174: group17
-    100176: group18
-    100178: group19
-    100180: group20
-    100182: group21
-    100184: group22
-    100186: group23
-    100188: group24
-    100190: group4
-    100192: group5
-    100194: kitchenBar
-    100196: kitchenCabinetCornerRound
-    100198: kitchenCoffeeMachine
-    100200: kitchenFridgeSmall
-    100202: kitchenMicrowave
-    100204: kitchenSink
-    100206: kitchenStoveElectric
-    100208: loungeSofa
-    100210: mug
-    100212: pillowBottom
-    100214: pillowLeft
-    100216: pillowLeft1
-    100218: pillowTop
-    100220: televisionModern
-    100222: toiletSquare
-    100224: washer
-    100226: washerDoor
     400000: //RootNode
     400002: pCube1
     400004: pCube10
@@ -169,68 +107,6 @@ ModelImporter:
     400098: pPlane1
     400100: pPlane2
     400102: pPlane3
-    400104: bathroomSink
-    400106: bedBunk
-    400108: bedDouble
-    400110: bookcaseClosedDoors
-    400112: books
-    400114: bunk_bed_Grp
-    400116: cabinetBedDrawerTable
-    400118: cabinetTelevision
-    400120: cabinetTelevisionDoors
-    400122: chair
-    400124: chair1
-    400126: chair2
-    400128: chairModernCushion
-    400130: chairModernCushion1
-    400132: cover
-    400134: coverBottom
-    400136: coverTop
-    400138: desk
-    400140: door
-    400142: door_Grp
-    400144: doorFridge
-    400146: doorLeft
-    400148: doorRight
-    400150: doorwayFront
-    400152: drawer
-    400154: dryer
-    400156: dryerDoor
-    400158: Group
-    400160: group10
-    400162: group11
-    400164: group12
-    400166: group13
-    400168: group14
-    400170: group15
-    400172: group16
-    400174: group17
-    400176: group18
-    400178: group19
-    400180: group20
-    400182: group21
-    400184: group22
-    400186: group23
-    400188: group24
-    400190: group4
-    400192: group5
-    400194: kitchenBar
-    400196: kitchenCabinetCornerRound
-    400198: kitchenCoffeeMachine
-    400200: kitchenFridgeSmall
-    400202: kitchenMicrowave
-    400204: kitchenSink
-    400206: kitchenStoveElectric
-    400208: loungeSofa
-    400210: mug
-    400212: pillowBottom
-    400214: pillowLeft
-    400216: pillowLeft1
-    400218: pillowTop
-    400220: televisionModern
-    400222: toiletSquare
-    400224: washer
-    400226: washerDoor
     2100000: lambert11
     2100002: lambert1
     2100004: lambert4
@@ -244,77 +120,6 @@ ModelImporter:
     2100020: lambert10
     2100022: lambert12
     2100024: lambert13
-    2100026: _defaultMat
-    2100028: metalLight1
-    2100030: carpetWhite1
-    2100032: metalDark1
-    2100034: metal3
-    2100036: carpetWhite3
-    2100038: wood1
-    2100040: metal
-    2100042: carpet1
-    2100044: wood4
-    2100046: metal2
-    2100048: wood3
-    2100050: metalLight8
-    2100052: glass3
-    2100054: metal7
-    2100056: metalDark4
-    2100058: wood7
-    2100060: metal9
-    2100062: woodDark2
-    2100064: metalLight9
-    2100066: metalMedium
-    2100068: metalDark5
-    2100070: metal11
-    2100072: glass4
-    2100074: _defaultMat1
-    2100076: metalLight10
-    2100078: metalMedium1
-    2100080: metalDark6
-    2100082: metal14
-    2100084: wood11
-    2100086: wood14
-    2100088: carpetDarker
-    2100090: carpetWhite4
-    2100092: plant
-    2100094: metal17
-    2100096: wood15
-    2100098: metal18
-    2100100: carpetBlue
-    2100102: wood17
-    2100104: metal19
-    2100106: carpetWhite7
-    2100108: metalLight12
-    2100110: carpet2
-    2100112: wood22
-    2100114: wood23
-    2100116: metal22
-    2100118: metalDark9
-    2100120: metalLight13
-    2100122: _defaultMat3
-    2100124: carpetWhite8
-    2100126: glass6
-    2100128: metalMedium3
-    2100130: metalDark10
-    2100132: metal23
-    2100134: wood24
-    2100136: metalDark11
-    2100138: carpetWhite9
-    2100140: glass7
-    2100142: metalMedium4
-    2100144: carpetWhite10
-    2100146: metalMedium5
-    2100148: metal24
-    2100150: wood26
-    2100152: _defaultMat4
-    2100154: metal25
-    2100156: metalDark12
-    2100158: glass8
-    2100160: carpetWhite11
-    2100162: carpet
-    2100164: carpetWhite2
-    2100166: wood
     2300000: pCube1
     2300002: pCube10
     2300004: pCube11
@@ -366,49 +171,6 @@ ModelImporter:
     2300096: pPlane1
     2300098: pPlane2
     2300100: pPlane3
-    2300102: bathroomSink
-    2300104: bedBunk
-    2300106: bedDouble
-    2300108: bookcaseClosedDoors
-    2300110: books
-    2300112: cabinetBedDrawerTable
-    2300114: cabinetTelevision
-    2300116: cabinetTelevisionDoors
-    2300118: chair
-    2300120: chair1
-    2300122: chair2
-    2300124: chairModernCushion
-    2300126: chairModernCushion1
-    2300128: cover
-    2300130: coverBottom
-    2300132: coverTop
-    2300134: desk
-    2300136: door
-    2300138: doorFridge
-    2300140: doorLeft
-    2300142: doorRight
-    2300144: doorwayFront
-    2300146: drawer
-    2300148: dryer
-    2300150: dryerDoor
-    2300152: Group
-    2300154: kitchenBar
-    2300156: kitchenCabinetCornerRound
-    2300158: kitchenCoffeeMachine
-    2300160: kitchenFridgeSmall
-    2300162: kitchenMicrowave
-    2300164: kitchenSink
-    2300166: kitchenStoveElectric
-    2300168: loungeSofa
-    2300170: mug
-    2300172: pillowBottom
-    2300174: pillowLeft
-    2300176: pillowLeft1
-    2300178: pillowTop
-    2300180: televisionModern
-    2300182: toiletSquare
-    2300184: washer
-    2300186: washerDoor
     3300000: pCube1
     3300002: pCube10
     3300004: pCube11
@@ -460,49 +222,6 @@ ModelImporter:
     3300096: pPlane1
     3300098: pPlane2
     3300100: pPlane3
-    3300102: bathroomSink
-    3300104: bedBunk
-    3300106: bedDouble
-    3300108: bookcaseClosedDoors
-    3300110: books
-    3300112: cabinetBedDrawerTable
-    3300114: cabinetTelevision
-    3300116: cabinetTelevisionDoors
-    3300118: chair
-    3300120: chair1
-    3300122: chair2
-    3300124: chairModernCushion
-    3300126: chairModernCushion1
-    3300128: cover
-    3300130: coverBottom
-    3300132: coverTop
-    3300134: desk
-    3300136: door
-    3300138: doorFridge
-    3300140: doorLeft
-    3300142: doorRight
-    3300144: doorwayFront
-    3300146: drawer
-    3300148: dryer
-    3300150: dryerDoor
-    3300152: Group
-    3300154: kitchenBar
-    3300156: kitchenCabinetCornerRound
-    3300158: kitchenCoffeeMachine
-    3300160: kitchenFridgeSmall
-    3300162: kitchenMicrowave
-    3300164: kitchenSink
-    3300166: kitchenStoveElectric
-    3300168: loungeSofa
-    3300170: mug
-    3300172: pillowBottom
-    3300174: pillowLeft
-    3300176: pillowLeft1
-    3300178: pillowTop
-    3300180: televisionModern
-    3300182: toiletSquare
-    3300184: washer
-    3300186: washerDoor
     4300000: pPlane1
     4300002: pCube1
     4300004: pCube2
@@ -554,49 +273,6 @@ ModelImporter:
     4300096: pCube44
     4300098: pCube45
     4300100: pCylinder3
-    4300102: bathroomSink
-    4300104: televisionModern
-    4300106: bedDouble
-    4300108: cover
-    4300110: pillowLeft
-    4300112: pillowLeft1
-    4300114: cabinetTelevisionDoors
-    4300116: doorRight
-    4300118: cabinetTelevision
-    4300120: doorLeft
-    4300122: doorFridge
-    4300124: kitchenFridgeSmall
-    4300126: kitchenBar
-    4300128: washer
-    4300130: washerDoor
-    4300132: dryer
-    4300134: dryerDoor
-    4300136: kitchenCabinetCornerRound
-    4300138: bookcaseClosedDoors
-    4300140: books
-    4300142: chair
-    4300144: chair1
-    4300146: chairModernCushion
-    4300148: chairModernCushion1
-    4300150: desk
-    4300152: drawer
-    4300154: chair2
-    4300156: toiletSquare
-    4300158: loungeSofa
-    4300160: kitchenSink
-    4300162: Group
-    4300164: kitchenMicrowave
-    4300166: kitchenStoveElectric
-    4300168: mug
-    4300170: kitchenCoffeeMachine
-    4300172: cabinetBedDrawerTable
-    4300174: door
-    4300176: doorwayFront
-    4300178: coverTop
-    4300180: bedBunk
-    4300182: coverBottom
-    4300184: pillowBottom
-    4300186: pillowTop
     2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
