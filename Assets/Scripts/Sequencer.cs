@@ -28,14 +28,14 @@ public class Sequencer : MonoBehaviour
         {
             sequenceArray[currentIndex].OnReady();
         }
-        else
-        {
-            //possibly start triggering win-game events
-        }
     }
 
     public void OnActivated(Activatable newActivatable)
     {
+        if (newActivatable != sequenceArray[currentIndex])
+        {
+            Debug.LogError("Oh man, we have an activatable activating out of order :(");
+        }
         //close out the previous
         currentIndex++;
         AdvanceSequence();

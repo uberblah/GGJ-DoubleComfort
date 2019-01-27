@@ -11,11 +11,13 @@ public class Activatable : MonoBehaviour
         Ready
     }
     public delegate void OnReadyDelegate(EventType et);
+    public delegate bool BlockerDelegate();
 
     private Dictionary<string, OnReadyDelegate> listeners = new Dictionary<string, OnReadyDelegate>();
 
     public Sequencer sequencer = null;
     private bool ready = false;
+    private readonly System.Guid id = System.Guid.NewGuid();
 
     public void TryActivate()
     {
@@ -26,11 +28,10 @@ public class Activatable : MonoBehaviour
                 kv.Value(EventType.Activated);
             }
             sequencer.OnActivated(this);
-
         }
     }
 
-    public void OnReady()
+    public virtual void OnReady()
     {
         ready = true;
         foreach(var kv in listeners)
