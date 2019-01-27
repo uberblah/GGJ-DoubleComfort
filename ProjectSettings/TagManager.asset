@@ -12,6 +12,7 @@ TagManager:
   - Bathroom
   - Parents room
   - Laundry room
+  - WallPiece
   layers:
   - Default
   - TransparentFX
