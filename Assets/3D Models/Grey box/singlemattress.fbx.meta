@@ -1,76 +1,27 @@
 fileFormatVersion: 2
-guid: 0c8a44fe3cf7b42a9b84d0b6d79d5547
+guid: 5c2dcbc9a39d34271a9b7c2c5e57e741
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: base_board
-    100002: Camera
-    100004: front_left_wheel
-    100006: front_right_wheel
-    100008: front_truck
-    100010: Lamp
-    100012: rear_left_wheel
-    100014: rear_right_wheel
-    100016: rear_truck
-    100018: screw
-    100020: screw.001
-    100022: screw.002
-    100024: screw.003
-    100026: //RootNode
-    400000: base_board
-    400002: Camera
-    400004: front_left_wheel
-    400006: front_right_wheel
-    400008: front_truck
-    400010: Lamp
-    400012: rear_left_wheel
-    400014: rear_right_wheel
-    400016: rear_truck
-    400018: screw
-    400020: screw.001
-    400022: screw.002
-    400024: screw.003
-    400026: //RootNode
-    2000000: Camera
-    2100000: inner_wheel_Mat
-    2100002: wheel_Mat
-    2100004: skateboard_rear_truck_Mat
-    2100006: skateboard_front_truck_Mat
-    2100008: skateboard_base_Mat
-    2300000: base_board
-    2300002: front_left_wheel
-    2300004: front_right_wheel
-    2300006: front_truck
-    2300008: rear_left_wheel
-    2300010: rear_right_wheel
-    2300012: rear_truck
-    2300014: screw
-    2300016: screw.001
-    2300018: screw.002
-    2300020: screw.003
-    3300000: base_board
-    3300002: front_left_wheel
-    3300004: front_right_wheel
-    3300006: front_truck
-    3300008: rear_left_wheel
-    3300010: rear_right_wheel
-    3300012: rear_truck
-    3300014: screw
-    3300016: screw.001
-    3300018: screw.002
-    3300020: screw.003
-    4300000: screw.003
-    4300002: screw.002
-    4300004: screw.001
-    4300006: screw
-    4300008: rear_left_wheel
-    4300010: rear_truck
-    4300012: rear_right_wheel
-    4300014: front_right_wheel
-    4300016: front_truck
-    4300018: front_left_wheel
-    4300020: base_board
-    10800000: Lamp
+    100000: cover
+    100002: pillow
+    100004: //RootNode
+    400000: cover
+    400002: pillow
+    400004: //RootNode
+    2100000: carpetWhite
+    2100002: wood
+    2100004: metal
+    2100006: carpet
+    2300000: cover
+    2300002: pillow
+    2300004: //RootNode
+    3300000: cover
+    3300002: pillow
+    3300004: //RootNode
+    4300000: bedSingle
+    4300002: cover
+    4300004: pillow
   externalObjects: {}
   materials:
     importMaterials: 1
