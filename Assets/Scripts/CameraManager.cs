@@ -11,6 +11,8 @@ public class CameraManager : MonoBehaviour
     float distance = 0.0f;
     GameObject hitObject;
     GameObject translucentObject;
+    Material wallMaterialOpaque;
+    Material wallMaterialTransparent;
 
     List<GameObject> newRaycastHitList;
     List<GameObject> transparentObjectsList;
@@ -37,9 +39,19 @@ public class CameraManager : MonoBehaviour
         {
             if(tempArray[i].transform.gameObject.tag == "WallPiece")
             {
-                Color tempColor = tempArray[i].transform.gameObject.GetComponent<Renderer>().material.color;
-                tempColor.a = 0.5f;
-                tempArray[i].transform.gameObject.GetComponent<Renderer>().material.color = tempColor;
+                if (wallMaterialOpaque == null)
+                {
+                    wallMaterialOpaque = tempArray[i].transform.gameObject.GetComponent<Renderer>().material;
+                    wallMaterialOpaque.name = wallMaterialOpaque.name.Substring(0, wallMaterialOpaque.name.IndexOf(' '));
+                    print("Opaque Name is " + wallMaterialOpaque.name);
+                    print("Searching for " + "Materials/" + wallMaterialOpaque.name + "Transparent");
+                    wallMaterialTransparent = Resources.Load<Material>("Materials/"+ wallMaterialOpaque.name+"Transparent");
+                    if(wallMaterialTransparent != null)
+                    {
+                        print("Transparent name is " + wallMaterialTransparent.name);
+                    }
+                }
+                tempArray[i].transform.gameObject.GetComponent<Renderer>().material = wallMaterialTransparent;
                 newRaycastHitList.Add(tempArray[i].transform.gameObject);
             }
         }//if the old list does NOT contain the current checked element of the new list, make it opaque
@@ -61,9 +73,7 @@ public class CameraManager : MonoBehaviour
             {
                 if(newRaycastHitList.Contains(transparentObjectsList[i]) == false)
                 {
-                    Color tempColor = transparentObjectsList[i].GetComponent<Renderer>().material.color;
-                    tempColor.a = 1.0f;
-                    transparentObjectsList[i].GetComponent<Renderer>().material.color = tempColor;
+                    transparentObjectsList[i].GetComponent<Renderer>().material = wallMaterialOpaque;
                 }
             }
         }
@@ -71,9 +81,7 @@ public class CameraManager : MonoBehaviour
         {
             for (int j = 0; j < transparentObjectsList.Count; j++)
             {
-                Color tempColor = transparentObjectsList[j].GetComponent<Renderer>().material.color;
-                tempColor.a = 1.0f;
-                transparentObjectsList[j].GetComponent<Renderer>().material.color = tempColor;
+                transparentObjectsList[j].GetComponent<Renderer>().material = wallMaterialOpaque;
             }
         }
     }
