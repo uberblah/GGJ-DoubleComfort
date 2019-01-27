@@ -7,6 +7,7 @@ public class MovementScript : MonoBehaviour
     GameObject playerReference;
     Rigidbody playerRigidbody;
     GameObject cameraReference;
+    CharacterAnimatizer anim;
 
     float xMotion = 0f;
     float zMotion = 0f;
@@ -26,6 +27,7 @@ public class MovementScript : MonoBehaviour
         cameraReference = Camera.main.gameObject;
         playerReference = GameObject.Find("Player").gameObject;
         playerRigidbody = playerReference.GetComponent<Rigidbody>();
+        anim = GetComponent<CharacterAnimatizer>();
     }
 
     // Update is called once per frame
@@ -39,6 +41,11 @@ public class MovementScript : MonoBehaviour
             newEulerAngles.y += cameraReference.transform.eulerAngles.y;
             playerReference.transform.eulerAngles = newEulerAngles;
             playerRigidbody.transform.Translate(Vector3.forward * motionSpeed * Time.deltaTime);
+            anim.DoWalking();
+        }
+        else
+        {
+            anim.DoIdle();
         }
 
 
