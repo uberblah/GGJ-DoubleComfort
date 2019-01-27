@@ -6,10 +6,10 @@ public class TouchZone : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        OnTouch angel = other.GetComponent<OnTouch>();
-        if (angel != null)
+        OnTouch touchy = other.GetComponent<OnTouch>();
+        if (touchy != null)
         {
-            angel.Touch();
+            touchy.Touch();
         }
     }
 }
