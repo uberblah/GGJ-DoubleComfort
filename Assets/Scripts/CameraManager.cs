@@ -11,6 +11,9 @@ public class CameraManager : MonoBehaviour
     GameObject hitObject;
     GameObject translucentObject;
 
+    List<GameObject> newRaycastHitList;
+    List<GameObject> transparentObjectsList;
+
     void Awake()
     {
         playerTransform = player.transform;
@@ -18,30 +21,47 @@ public class CameraManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        newRaycastHitList = new List<GameObject>();
+        transparentObjectsList = new List<GameObject>();
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
         dir = player.transform.position - transform.position;
+        RaycastHit[] tempArray = Physics.RaycastAll(transform.position, dir, 1000f);
 
-        Debug.DrawRay(transform.position, dir * raycastHit.distance, Color.red);
-        if (Physics.Raycast(transform.position, dir, out raycastHit, Mathf.Infinity))
+        for (int i = 0; i < tempArray.Length; i++)
         {
-            hitObject = raycastHit.transform.gameObject;
-            if (translucentObject != null && translucentObject != hitObject)
+            if(tempArray[i].transform.gameObject.name != "Player" && tempArray[i].transform.gameObject.name != "Floor")
             {
-                //have tranlucentObject fade back in
-                print("Fading in " + translucentObject.name);
-                translucentObject = null;
+                Color tempColor = tempArray[i].transform.gameObject.GetComponent<Renderer>().material.color;
+                tempColor.a = 0.5f;
+                tempArray[i].transform.gameObject.GetComponent<Renderer>().material.color = tempColor;
+                newRaycastHitList.Add(tempArray[i].transform.gameObject);
             }
-            if (hitObject.name != "Player" && hitObject.name != "Floor")
-            {
-                translucentObject = hitObject;
-                print("Fading out " + translucentObject.name);
-            }
-        }
+        }//if the old list does NOT contain the current checked element of the new list, make it opaque
+
+        CheckWhichToMakeOpaque();
+        transparentObjectsList = newRaycastHitList;
+        newRaycastHitList.Clear();
     }
 
+    void CheckWhichToMakeOpaque()
+    {
+
+        for(int i = 0; i < newRaycastHitList.Count; i++)
+        {
+            if(transparentObjectsList.Contains(newRaycastHitList[i]))
+            {
+                transparentObjectsList.Remove(newRaycastHitList[i]);
+            }
+        }
+        for(int j = 0; j < transparentObjectsList.Count; j++)
+        {
+            Color tempColor = transparentObjectsList[j].GetComponent<Renderer>().material.color;
+            tempColor.a = 1.0f;
+            transparentObjectsList[j].GetComponent<Renderer>().material.color = tempColor;
+        }
+    }
 }

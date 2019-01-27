@@ -32,11 +32,12 @@ public class MovementScript : MonoBehaviour
     void FixedUpdate()
     {
         Vector3 newPosition = playerRigidbody.position;
-        Vector3 newEulerAngles = new Vector3(playerReference.transform.eulerAngles.x, Mathf.Atan2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")) * Mathf.Rad2Deg, playerReference.transform.eulerAngles.z);
-        newEulerAngles.y += cameraReference.transform.eulerAngles.y;
-        playerReference.transform.eulerAngles = newEulerAngles;
-        if ((Input.GetAxis("Horizontal") > 0f || Input.GetAxis("Horizontal") < 0f) || (Input.GetAxis("Vertical") > 0f || Input.GetAxis("Vertical") < 0f))
+        
+        if ((Input.GetAxis("Horizontal") > 0.05f || Input.GetAxis("Horizontal") < -0.05f) || (Input.GetAxis("Vertical") > 0.05f || Input.GetAxis("Vertical") < -0.05f))
         {
+            Vector3 newEulerAngles = new Vector3(playerReference.transform.eulerAngles.x, Mathf.Atan2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")) * Mathf.Rad2Deg, playerReference.transform.eulerAngles.z);
+            newEulerAngles.y += cameraReference.transform.eulerAngles.y;
+            playerReference.transform.eulerAngles = newEulerAngles;
             playerRigidbody.transform.Translate(Vector3.forward * motionSpeed * Time.deltaTime);
         }
 
