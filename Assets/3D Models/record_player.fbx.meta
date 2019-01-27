@@ -1,0 +1,197 @@
+fileFormatVersion: 2
+guid: 6b68384919f024f0980a822736161f34
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: album
+    100002: Cube.002
+    100004: Cube.003
+    100006: Cylinder.001
+    100008: Cylinder.007
+    100010: Cylinder.008
+    100012: knob
+    100014: knob.001
+    100016: knob.002
+    100018: knob.003
+    100020: Lamp
+    100022: platter.001
+    100024: //RootNode
+    100026: record_player_lid
+    100028: spindle
+    100030: turntable
+    100032: turntable_leg
+    100034: turntable_leg.001
+    100036: turntable_leg.002
+    100038: turntable_leg.003
+    400000: album
+    400002: Cube.002
+    400004: Cube.003
+    400006: Cylinder.001
+    400008: Cylinder.007
+    400010: Cylinder.008
+    400012: knob
+    400014: knob.001
+    400016: knob.002
+    400018: knob.003
+    400020: Lamp
+    400022: platter.001
+    400024: //RootNode
+    400026: record_player_lid
+    400028: spindle
+    400030: turntable
+    400032: turntable_leg
+    400034: turntable_leg.001
+    400036: turntable_leg.002
+    400038: turntable_leg.003
+    2100000: turnplayer_leg_Mat
+    2100002: record_player_album_Mat
+    2100004: needle_thingy_part
+    2100006: turntable_head_part
+    2100008: needle_base
+    2100010: needle
+    2100012: knob_Mat
+    2100014: record_player_top_Mat
+    2100016: spindle_Mat
+    2100018: record_player_inside_album_Mat
+    2100020: turntable_Mat
+    2300000: album
+    2300002: Cube.002
+    2300004: Cube.003
+    2300006: Cylinder.001
+    2300008: Cylinder.007
+    2300010: Cylinder.008
+    2300012: knob
+    2300014: knob.001
+    2300016: knob.002
+    2300018: knob.003
+    2300020: platter.001
+    2300022: record_player_lid
+    2300024: spindle
+    2300026: turntable
+    2300028: turntable_leg
+    2300030: turntable_leg.001
+    2300032: turntable_leg.002
+    2300034: turntable_leg.003
+    3300000: album
+    3300002: Cube.002
+    3300004: Cube.003
+    3300006: Cylinder.001
+    3300008: Cylinder.007
+    3300010: Cylinder.008
+    3300012: knob
+    3300014: knob.001
+    3300016: knob.002
+    3300018: knob.003
+    3300020: platter.001
+    3300022: record_player_lid
+    3300024: spindle
+    3300026: turntable
+    3300028: turntable_leg
+    3300030: turntable_leg.001
+    3300032: turntable_leg.002
+    3300034: turntable_leg.003
+    4300000: turntable_leg.002
+    4300002: turntable_leg.003
+    4300004: turntable_leg.001
+    4300006: turntable_leg
+    4300008: platter.001
+    4300010: Cube.003
+    4300012: Cube.002
+    4300014: Cylinder.008
+    4300016: Cylinder.007
+    4300018: knob.002
+    4300020: knob
+    4300022: knob.003
+    4300024: knob.001
+    4300026: record_player_lid
+    4300028: spindle
+    4300030: Cylinder.001
+    4300032: album
+    4300034: turntable
+    10800000: Lamp
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
