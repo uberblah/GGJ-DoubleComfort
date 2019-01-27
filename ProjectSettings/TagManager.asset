@@ -4,6 +4,14 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Bedroom
+  - Living room
+  - Kitchen
+  - hallway
+  - Dining room
+  - Bathroom
+  - Parents room
+  - Laundry room
   - WallPiece
   layers:
   - Default
