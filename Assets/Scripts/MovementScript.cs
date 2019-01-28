@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
+using UnityEngine; using UnityEngine.SceneManagement;
 
 public class MovementScript : MonoBehaviour
 {
@@ -59,7 +59,14 @@ public class MovementScript : MonoBehaviour
 
         if (Input.GetKey(key: KeyCode.Q) || Input.GetKey(key: KeyCode.Escape))
         {
-            Application.Quit();
+            if(SceneManager.GetActiveScene().buildIndex == 0)
+            {
+                SceneManager.LoadScene(1);
+            }
+            else
+            {
+                Application.Quit();
+            }
         }
     }
 

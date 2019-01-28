@@ -16,8 +16,8 @@ public class Activatable : MonoBehaviour
     private Dictionary<string, OnReadyDelegate> listeners = new Dictionary<string, OnReadyDelegate>();
 
     public Sequencer sequencer = null;
-    private bool ready = false;
-    private bool done = false;
+    public bool ready = false;
+    public bool done = false;
     private readonly System.Guid id = System.Guid.NewGuid();
 
     public void TryActivate()
@@ -35,9 +35,11 @@ public class Activatable : MonoBehaviour
 
     public virtual void OnReady()
     {
+        Debug.Log("ACTIVATABLE READY");
         ready = true;
         foreach(var kv in listeners)
         {
+            Debug.Log("CALLING LISTENER " + kv.Key);
             kv.Value(EventType.Ready);
         }
     }
